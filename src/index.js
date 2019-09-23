@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hello CodeSandbox</h1>
-      <h2>Very Cool!</h2>
+      <h2>Welcome to Material UI</h2>
     </div>
   );
 }
