@@ -1,12 +1,13 @@
 import React from "react";
 import { Paper, Tabs, Tab } from "@material-ui/core";
 
-export default props => (
+export default ({ muscles }) => (
   <Paper>
     <Tabs indicatorColor="primary" textColor="primary" centered value={0}>
-      <Tab label="Item One" />
-      <Tab label="Item Two" />
-      <Tab label="Item Three" />
+      <Tab label="All" />
+      {muscles.map(group => (
+        <Tab label={group} />
+      ))}
     </Tabs>
   </Paper>
 );
